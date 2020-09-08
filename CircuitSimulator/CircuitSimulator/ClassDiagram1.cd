@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Composite&#xD;&#xA;">
+    <Position X="9.9" Y="9.262" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Builder">
+    <Position X="9.25" Y="6.25" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Visitor">
+    <Position X="19.727" Y="11.282" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Strategy">
+    <Position X="28.39" Y="4.501" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Mediator">
+    <Position X="16.787" Y="0.755" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Factory">
+    <Position X="24.073" Y="2.011" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="CircuitSimulator.Strategy.FileReaderContext">
+    <Position X="25.25" Y="5" Width="1.5" />
+    <InheritanceLine Type="CircuitSimulator.Mediator.BaseComponent" FixedFromPoint="true">
+      <Path>
+        <Point X="23.5" Y="8.062" />
+        <Point X="23.75" Y="8.062" />
+        <Point X="23.75" Y="7.016" />
+        <Point X="25.25" Y="7.016" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>EAAAQIAAAAIAQAAAAACAAAEAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Strategy\FileReaderContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="strategy" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CircuitSimulator.FileReading.LineInterpreter">
+    <Position X="25" Y="8.5" Width="1.5" />
+    <InheritanceLine Type="CircuitSimulator.Mediator.BaseComponent" FixedFromPoint="true">
+      <Path>
+        <Point X="23.5" Y="8.062" />
+        <Point X="25.75" Y="8.062" />
+        <Point X="25.75" Y="8.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAACACAAAAAAAACAAAAAgAAAAIAIA=</HashCode>
+      <FileName>FileReading\LineInterpreter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Composite.NodeComponent" Collapsed="true">
+    <Position X="8.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wIABAAAAAAAYAgAgAACIAAQAAACAAFAIAAAgAAAQAAA=</HashCode>
+      <FileName>Composite\NodeComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Strategy.TxtFileReaderStrategy">
+    <Position X="28.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAgAAAAAAAAAYgAAAAAAAAAAAAABAAAABAAAAAAAA=</HashCode>
+      <FileName>Strategy\TxtFileReaderStrategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CircuitSimulator.Composite.Nodes.ANDNode">
+    <Position X="3.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Composite\Nodes\ANDNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Composite.Nodes.Circuit">
+    <Position X="5.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Composite\Nodes\Circuit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Composite.Nodes.NANDNode">
+    <Position X="7.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Composite\Nodes\NANDNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Composite.Nodes.NORNode">
+    <Position X="9" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Composite\Nodes\NORNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Composite.Nodes.NOTNode">
+    <Position X="10.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Composite\Nodes\NOTNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Composite.Nodes.ORNode">
+    <Position X="12.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Composite\Nodes\ORNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Composite.Nodes.XORNode">
+    <Position X="14.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Composite\Nodes\XORNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Builder.CircuitDirector">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAIAAAAAAAgAAACAAIAAAAEAAIBQAQAAAAAEAI=</HashCode>
+      <FileName>Builder\CircuitDirector.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="builderList" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CircuitSimulator.Composite.Nodes.OutputNode">
+    <Position X="16" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Composite\Nodes\OutputNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Composite.Nodes.InputNode">
+    <Position X="2" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Composite\Nodes\InputNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Visitor.NodeVisitor" Collapsed="true">
+    <Position X="18" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Visitor\NodeVisitor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CircuitSimulator.Factory.BuilderFactory">
+    <Position X="13.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAgAAAAAAAAAABABIIAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Factory\BuilderFactory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="builder" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CircuitSimulator.Factory.StrategyFactory">
+    <Position X="22" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAgAAAAAAAAAABABAAAAAAAAAAAIQAQA=</HashCode>
+      <FileName>Factory\StrategyFactory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="strategy" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CircuitSimulator.Data.CircuitData" Collapsed="true">
+    <Position X="24" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAIAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\CircuitData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Data.CommandHandler" Collapsed="true">
+    <Position X="16.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAQAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Data\CommandHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Data.FileData" Collapsed="true">
+    <Position X="26.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Data\FileData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Builder.ANDBuilder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="7.25" Width="1.5" />
+    <AssociationLine Name="Node" Type="CircuitSimulator.Composite.NodeComponent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.75" Y="7.812" />
+        <Point X="4.75" Y="8.938" />
+        <Point X="8.5" Y="8.938" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Builder\ANDBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Node" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CircuitSimulator.Builder.CircuitBuilder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="7.25" Width="1.5" />
+    <AssociationLine Name="Node" Type="CircuitSimulator.Composite.NodeComponent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.5" Y="7.812" />
+        <Point X="6.5" Y="8.938" />
+        <Point X="8.5" Y="8.938" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Builder\CircuitBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Node" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CircuitSimulator.Builder.InputBuilder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Builder\InputBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Node" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CircuitSimulator.Builder.NANDBuilder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Builder\NANDBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Node" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CircuitSimulator.Builder.NORBuilder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Builder\NORBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Node" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CircuitSimulator.Builder.NOTBuilder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="7.25" Width="1.5" />
+    <AssociationLine Name="Node" Type="CircuitSimulator.Composite.NodeComponent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.75" Y="7.812" />
+        <Point X="11.75" Y="8.812" />
+        <Point X="10" Y="8.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Builder\NOTBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Node" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CircuitSimulator.Builder.ORBuilder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="7.25" Width="1.5" />
+    <AssociationLine Name="Node" Type="CircuitSimulator.Composite.NodeComponent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.5" Y="7.812" />
+        <Point X="13.5" Y="8.812" />
+        <Point X="10" Y="8.812" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.151" Y="0.365" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Builder\ORBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Node" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CircuitSimulator.Builder.OutputBuilder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Builder\OutputBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Node" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CircuitSimulator.Builder.XORBuilder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="7.25" Width="1.5" />
+    <AssociationLine Name="Node" Type="CircuitSimulator.Composite.NodeComponent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.25" Y="7.812" />
+        <Point X="15.25" Y="8.812" />
+        <Point X="10" Y="8.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Builder\XORBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Node" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CircuitSimulator.Mediator.BaseComponent" Collapsed="true">
+    <Position X="22" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mediator\BaseComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircuitSimulator.Mediator.SimulatorMediator">
+    <Position X="19" Y="0.75" Width="1.5" />
+    <AssociationLine Name="_fileReaderContext" Type="CircuitSimulator.Strategy.FileReaderContext" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.875" Y="2.882" />
+        <Point X="19.875" Y="6.323" />
+        <Point X="25.25" Y="6.323" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_lineInterpreter" Type="CircuitSimulator.FileReading.LineInterpreter" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.25" Y="2.882" />
+        <Point X="19.25" Y="9.95" />
+        <Point X="25" Y="9.95" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAgCAAAAAAAAAABAAAAAAAQYAAI=</HashCode>
+      <FileName>Mediator\SimulatorMediator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_circuitData" />
+      <Field Name="_fileData" />
+      <Field Name="_fileReaderContext" />
+      <Field Name="_lineInterpreter" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="CircuitSimulator.Strategy.IFileReaderStrategy">
+    <Position X="28.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Strategy\IFileReaderStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CircuitSimulator.Builder.IBuilder" Collapsed="true">
+    <Position X="12" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Builder\IBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="CircuitSimulator.Data.OperationEnum" Collapsed="true">
+    <Position X="16.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAACEAAAAAAAAAABEAAAAABAAAAAAAIA=</HashCode>
+      <FileName>Data\OperationEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
